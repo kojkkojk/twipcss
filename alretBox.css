@@ -1,0 +1,63 @@
+@keyframes rgb {
+   0% {
+       background-color: red;
+   }
+
+   25% {
+       background-color: blue;
+   }
+
+   50% {
+       background-color: green;
+   }
+
+   75% {
+       background-color: blue;
+   }
+
+   100% {
+       background-color: red;
+   }
+}
+
+body {
+   margin: 0;
+   padding: 0;
+}
+
+#video-area {
+   display: none !important;
+}
+
+#text-wrap {
+   position: absolute !important;
+   overflow: hidden;
+   bottom: 0px;
+   width: 100% !important;
+   height: 50px !important;
+   animation-name: rgb;
+   animation-duration: 4s;
+   animation-timing-function: linear;
+   animation-delay: 0s;
+   animation-iteration-count: infinite;
+   animation-direction: normal;
+   animation-fill-mode: forwards;
+   animation-play-state: running;
+}
+
+#image-wrap {
+   display: none !important;
+}
+
+#alert-text {
+   padding: 0 !important;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+}
+
+h1,
+h2 {
+   margin: 0 !important;
+}
