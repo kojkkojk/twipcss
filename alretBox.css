@@ -34,7 +34,13 @@ body {
    overflow: hidden;
    bottom: 0px;
    width: 100% !important;
-   height: 50px !important;
+}
+
+#image-wrap {
+   display: none !important;
+}
+
+#alert-text {
    animation-name: rgb;
    animation-duration: 4s;
    animation-timing-function: linear;
@@ -43,13 +49,6 @@ body {
    animation-direction: normal;
    animation-fill-mode: forwards;
    animation-play-state: running;
-}
-
-#image-wrap {
-   display: none !important;
-}
-
-#alert-text {
    padding: 0 !important;
    display: flex;
    justify-content: center;
