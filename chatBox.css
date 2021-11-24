@@ -1,80 +1,82 @@
 @font-face {
-   font-family: 'SLEIGothicTTF';
-   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SLEIGothicTTF.woff') format('woff');
+   font-family: 'GmarketSansMedium';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
    font-weight: normal;
    font-style: normal;
 }
 
-@keyframes fadeInUp {
-   from {
-      opacity: 0;
-      transform: translateY(10px);
-   }
-   to {
-      opacity: 1;
-      transform: translateY(0);
-   }
-}
+     @keyframes fadeInUp {
+        from {
+           opacity: 0;
+           transform: translateY(10px);
+        }
 
-@keyframes fadeOut {
-   to {
-      opacity: 0;
-   }
-}
+        to {
+           opacity: 1;
+           transform: translateY(0);
+        }
+     }
 
-*,
-::before,
-::after {
-   box-sizing: border-box;
-}
+     @keyframes fadeOut {
+        to {
+           opacity: 0;
+        }
+     }
 
-#log {
-   border-radius: 5px;
-   position: absolute;
-   bottom: 0;
-   padding: 10px;
-   margin-bottom: 10px;
-}
+     *,
+     ::before,
+     ::after {
+        box-sizing: border-box;
+     }
 
-#log>div {
-   position: relative;
-   width: 560px;
-   background: var(--deckgo-highlight-code-carbon-background, whitesmoke);
-   border-radius: 5px;
-   margin: 12px 5px 0 5px;
-   padding: 8px 10px 8px 10px;
-   box-shadow: var(--deckgo-highlight-code-carbon-box-shadow, rgba(0, 0, 0, 0.55) 5px 5px 8px);
-   animation: fadeInUp 0.5s ease, fadeOut 0.5s ease $message_hide_delays forwards ;
-}
+     #log {
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        padding: 10px;
+        margin-bottom: 10px;
+     }
 
-#log>div.broadcaster,
-#log>div.moderator {
-   color: rgb(173, 0, 0);
-}
+     #log>div {
+        position: relative;
+         width: calc(100% - 20px);
+        background: var(--deckgo-highlight-code-carbon-background, whitesmoke);
+        border-radius: 5px;
+        margin: 12px 5px 0 5px;
+        padding: 8px 10px 8px 10px;
+        box-shadow: var(--deckgo-highlight-code-carbon-box-shadow, rgba(0, 0, 0, 0.55) 5px 5px 8px);
+        animation: fadeInUp 0.5s ease, fadeOut 0.5s ease $message_hide_delays forwards ;
+     }
 
-#log>div::before {
-   content: "";
-   position: absolute;
-   left: 0;
-   top: 0;
-   margin-left: 10px;
-   width: 50px;
-   height: 50px;
-   background: url(https://i.ibb.co/6XHm1sL/test2.png) center no-repeat;
-   background-size: cover;
-   border-radius: 5px;
-}
+     #log>div.broadcaster,
+     #log>div.moderator {
+        color: rgb(173, 0, 0);
+     }
 
-#log>div>span .name {
-   display: none;
-}
 
-.colon {
-   display: none;
-}
+     #log>div::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-left: 10px;
+        width: 50px;
+        height: 50px;
+        background: url(https://i.ibb.co/6XHm1sL/test2.png) center no-repeat;
+        background-size: cover;
+        border-radius: 5px;
+     }
 
-.message {
-   font-size: $font_sizepx;
-   margin: 50px;
-   font-family: 'SLEIGothicTTF';
-}
+     #log>div>span .name {
+        display: none;
+     }
+
+     .colon {
+        display: none;
+     }
+
+     .message {
+        font-size: $font_sizepx;
+        margin: 40px;
+         font-family: 'GmarketSansMedium';
+     }
