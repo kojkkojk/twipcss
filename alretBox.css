@@ -41,19 +41,22 @@ body {
 }
 
 #alert-text {
-   animation-name: rgb;
+   border-top: 2px solid blue;
+   background-color: rgba(100, 148, 237, 0.575);
+   /* animation-name: rgb;
    animation-duration: 4s;
    animation-timing-function: linear;
    animation-delay: 0s;
    animation-iteration-count: infinite;
    animation-direction: normal;
    animation-fill-mode: forwards;
-   animation-play-state: running;
+   animation-play-state: running; */
    padding: 0 !important;
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: row;
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 h1,
