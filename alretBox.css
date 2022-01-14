@@ -41,8 +41,9 @@ body {
 }
 
 #alert-text {
-   border-top: 2px solid blue;
-   background-color: rgba(100, 148, 237, 0.575);
+   border-top: 2px solid rgba(97, 160, 255, 0.637);
+   background: rgb(106,255,182);
+   background: linear-gradient(135deg, rgba(106,255,182,1) 0%, rgba(62,232,255,1) 50%, rgba(106,255,182,1) 100%);
    /* animation-name: rgb;
    animation-duration: 4s;
    animation-timing-function: linear;
