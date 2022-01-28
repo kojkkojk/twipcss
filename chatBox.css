@@ -21,51 +21,37 @@
    }
 }
 
-*,
-::before,
-::after {
+* {
    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 }
-
 #log {
+   width: 100%;
+   padding: 0 1.2rem;
    border-radius: 5px;
    position: absolute;
    bottom: 0;
-   padding: 10px;
-   margin-bottom: 10px;
 }
-
 #log>div {
-   position: relative;
-   width: 560px;
-   background: var(--deckgo-highlight-code-carbon-background, whitesmoke);
-   border-radius: 5px;
-   margin: 12px 5px 0 5px;
-   padding: 8px 10px 8px 10px;
-   box-shadow: var(--deckgo-highlight-code-carbon-box-shadow, rgba(0, 0, 0, 0.55) 5px 5px 8px);
-   animation: fadeInUp 0.5s ease, fadeOut 0.5s ease $message_hide_delays forwards ;
+   width: 100%;
+   margin-bottom: 10px;
+   display: flex;
+   flex-direction: column;
+   animation: fadeInUp 0.5s ease ;
 }
-
-#log>div.broadcaster,
-#log>div.moderator {
-   color: rgb(173, 0, 0);
+.meta{
+   width: 100%;
+   padding: 0.25rem 0;
+   background-color: rgba(80, 80, 80, 0.5);
+   border-top-right-radius: 12px;
+   border-top-left-radius: 12px;
+   text-align: center;
 }
-
-#log>div::before {
-   content: "";
-   position: absolute;
-   left: 0;
-   top: 0;
-   margin-left: 10px;
-   width: 50px;
-   height: 50px;
-   background: url(https://i.ibb.co/6XHm1sL/test2.png) center no-repeat;
-   background-size: cover;
-   border-radius: 5px;
-}
-
-#log>div>span .name {
-   display: none;
+.name {
+   width: 100%;
+   color: #fff !important;
+   font-size: 1.1rem;
 }
 
 .colon {
@@ -73,7 +59,13 @@
 }
 
 .message {
-   font-size: $font_sizepx;
-   margin: 0 0 0 35px;
-    font-family: 'GmarketSansMedium';
+   max-height: 12rem;
+   border: 1px solid lightgray;
+   background-color: transparent;
+   font-size: 1.2rem;
+   overflow-y: hidden;
+	color: $text_color !important;
+   padding: 1rem 0.55rem;
+   border-bottom-right-radius: 12px;
+   border-bottom-left-radius: 12px;
 }
